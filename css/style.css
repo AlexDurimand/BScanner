@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--var-color-text);
+    box-sizing: border-box;
+}
+
+:root {
+    --var-color-active: #F4C82C;
+    --var-color-text:#353535;
+}
+
+/* ----------------- */
+/* main creen page */
+
+.main__navigation {
+    background-color: var(--var-color-active);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+/* ---------------------- */
+
+.main__nav {
+display: flex;
+justify-content: space-between;
+align-items: center ;
+padding: 30px 10px;
+}
+
+
+.main__city-item-active {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: #353535 solid 2px;
+    cursor: pointer;
+}
+
+.main__city-item-active::after {
+    display: inline-block;
+    content: url('../img/shevron.svg');
+
+}
+
+.main__city-item-active:hover {
+    background-color:rgba(255, 255, 255, 0.301);
+    transition: all .3s;
+}
+
+
+/* --------------------- */
+
+.main__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__menu-item {
+    list-style: none;
+    cursor: pointer;
+}
+
+.main__menu-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.main__menu-item a {
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: transparent solid 2px;
+}
+
+.main__menu-item a:hover {
+    /* font-weight: 500; */
+
+    border-bottom: #353535 solid 2px;
+    transition: all 0.3s;
+}
+
+
+
+
+/* --------------- */
+.main__screen {
+    background: url(../img/Main_Bg.jpg)  center center/cover no-repeat ;
+    
+}
+
+/* ----------------- */
+
+.main__screen_block h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 20px;
+}
+
+.main__screen_block h2 {
+    font-size:1.56rem ;
+    font-weight: 400;
+    max-width: 460px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.main__screen_block span {
+    color: white;
+    font-size: 1.56rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* -------------- */
+.screen__serch {
+    text-align: center;
+}
+
+.screen__serch_text {
+    font-size: 0.9rem;
+    width: 400px;
+    padding: 15px 80px 15px 20px;
+    margin-bottom: 4.15rem;
+    outline: none;
+}
+
+.screen__serch_text:hover {
+    /* background-color: rgba(255,255, 255, .9); */
+    box-shadow: rgba(224, 224, 224, 0.3) 0 5px 15px;
+    outline: none;
+}
+
+.screen__serch_btn {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--var-color-active);
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.screen__serch_btn:hover {
+    background-color: #b6910a;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.screen__btn {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--var-color-active);
+    border: var(--var-color-active) solid 1px;
+    width: 520px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    margin-bottom: 115px;
+}
+
+.screen__btn:hover {
+    color: #353535;
+    background-color: var(--var-color-active);
+    transition: all 0.3s;
+
+}
+
+.main__screen_block{
+position: relative;
+}
+
+.screen__serch-total {
+    font-size:0.875rem ;
+    color: white;
+    position: absolute;
+    left: 56%;
+    top:59%
+}
+
+.screen__serch-total span {
+    font-size: 0.875rem;
+}
+
+.screen__down {
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.screen__down::after {
+    content: url(../img/ico_shevron.svg);
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%);
+}
+
+/* features block */
+.features__block {
+    background-color: var(--var-color-text);
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.features__block p {
+    display: inline-block;
+    max-width: 1175px;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.45;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.features__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.item-block {
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.features__img {
+    width: 310px;
+    height: 310px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.item-block h2 {
+    font-size: 1.875rem;
+    color: var(--var-color-active);
+    margin-bottom: 25px;
+}
+
+.item-block span {
+    font-size: 4rem;
+    color: var(--var-color-active);
+    margin-left:10px ;
+}
+
+.item-block ul {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.item-block li {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+}
+
+/* footer */
+footer {
+    background-color: var(--var-color-active);
+}
+
+.footer_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px  0;
+}
+
+.footer_block p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.footer_politics {
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    border-bottom: transparent solid 2px;
+}
+
+.footer_politics:hover {
+    border-bottom: #353535 solid 2px;
+    transition: all 0.3s;
+}
